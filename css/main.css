@@ -102,6 +102,7 @@
     margin-bottom: 1em;
     animation-duration: 5s;
     animation-name: shownom;
+    height: 40px;
   }
   @keyframes shownom {
     0% {
