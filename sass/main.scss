@@ -1,5 +1,5 @@
-$myfont: caption 1.2em;
-$table_head_col: #c8c8c8;
+$myfont: 'Shrikhand' 1.2em;
+$table_head_col: #F7F7F7;
 $table_row_col: #eee;
 $table_bor_col: #eee;
 $container_width: 100%;
@@ -43,7 +43,7 @@ $first_col_width: 150px;
     div.container {
 
         margin: auto;
-        font: $myfont;
+       font-family: $myfont;
 
         background: $table_head_col;
         min-height: 46em;
@@ -52,12 +52,33 @@ $first_col_width: 150px;
         width: auto;
         display: block;
         position: relative;
-
+        h1 {
+           
+           
+            font-family: 'Shrikhand';
+            font-style: italic;
+            font-weight: bold;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 41px;
+        }
+        h2 {
+            font-family: monospace;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 19px;
+            text-transform: uppercase;
+            border-bottom: 3px solid #99e2d0;
+            width: 10%;
+            padding: 7px 0px;
+        }
         .vali {
             visibility: initial;
-            height: 1px;
+            height: 55px;
             opacity: 0;
-
+            position: absolute;
+            width: 85%;
 
         }
 
@@ -91,14 +112,13 @@ $first_col_width: 150px;
         }
 
         .arti {
-    background: rgb(243, 243, 243);
-    padding: 1em;
-    border-radius: 1em;
-    box-shadow: 1px 3px 5px rgb(58, 58, 58);
-    margin-bottom: 1em;
-    animation-duration: 5s;
-    animation-delay: 2s;
-    animation-name: shownom;
+            background: #FFFFFF;
+            padding: 1em;
+            border-radius: 1em;
+            box-shadow: 1px 3px 5px rgb(58 58 58 / 53%);
+            margin-bottom: 1em;
+            animation-duration: 5s;
+            animation-name: shownom;
    
 
     

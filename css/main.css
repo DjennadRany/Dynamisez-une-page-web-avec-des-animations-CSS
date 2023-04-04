@@ -27,8 +27,8 @@
   }
   div.container {
     margin: auto;
-    font: caption 1.2em;
-    background: #c8c8c8;
+    font-family: "Shrikhand" 1.2em;
+    background: #F7F7F7;
     min-height: 46em;
     padding: 1em 1em;
     border-radius: 1em 1em 0em 0em;
@@ -36,10 +36,31 @@
     display: block;
     position: relative;
   }
+  div.container h1 {
+    font-family: "Shrikhand";
+    font-style: italic;
+    font-weight: bold;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41px;
+  }
+  div.container h2 {
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 19px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #99e2d0;
+    width: 10%;
+    padding: 7px 0px;
+  }
   div.container .vali {
     visibility: initial;
-    height: 1px;
+    height: 55px;
     opacity: 0;
+    position: absolute;
+    width: 85%;
   }
   div.container :hover.vali {
     visibility: visible;
@@ -67,13 +88,12 @@
     padding: 0px 6px;
   }
   div.container .arti {
-    background: rgb(243, 243, 243);
+    background: #FFFFFF;
     padding: 1em;
     border-radius: 1em;
-    box-shadow: 1px 3px 5px rgb(58, 58, 58);
+    box-shadow: 1px 3px 5px rgba(58, 58, 58, 0.53);
     margin-bottom: 1em;
     animation-duration: 5s;
-    animation-delay: 2s;
     animation-name: shownom;
   }
   @keyframes shownom {
@@ -168,6 +188,6 @@
     width: 150px;
   }
   div.container table th {
-    background-color: #c8c8c8;
+    background-color: #F7F7F7;
   }
 }
