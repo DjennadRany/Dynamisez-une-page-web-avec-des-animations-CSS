@@ -203,6 +203,11 @@ $first_col_width: 150px;
 
             h3.titel {
                 margin: 0;
+                text-overflow: ellipsis;
+                width: auto;
+                display: flex;
+                white-space: nowrap;
+                overflow: hidden;
             }
 
 

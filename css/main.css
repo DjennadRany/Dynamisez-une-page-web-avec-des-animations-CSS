@@ -163,6 +163,11 @@
   }
   div.container .arti h3.titel {
     margin: 0;
+    text-overflow: ellipsis;
+    width: auto;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
   }
   div.container .btn-comm {
     background: linear-gradient(#ed6fda, #9f57dd);
