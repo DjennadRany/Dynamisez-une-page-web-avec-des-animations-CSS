@@ -27,7 +27,7 @@
   }
   div.container {
     margin: auto;
-    font-family: "Shrikhand" 1.2em;
+    font-family: "Roboto", sans-serif;
     background: #F7F7F7;
     min-height: 46em;
     padding: 1em 1em;
@@ -41,7 +41,7 @@
     position: relative;
   }
   div.container h1 {
-    font-family: "Shrikhand";
+    font-family: "Shrikhand", cursive;
     font-style: italic;
     font-weight: bold;
     font-weight: 400;
@@ -49,7 +49,7 @@
     line-height: 41px;
   }
   div.container h1 i.fa-regular.fa-heart {
-    margin-left: 5em;
+    margin-left: 30%;
   }
   div.container h2 {
     font-family: monospace;
@@ -186,11 +186,6 @@
   div.container .btn-comm:hover {
     background: #9f9f9f;
   }
-  div.container footer.footer {
-    background: #646464;
-    height: 11em;
-    padding: 1em;
-  }
   div.container table {
     border: 1px solid #eee;
   }
@@ -202,5 +197,25 @@
   }
   div.container table th {
     background-color: #F7F7F7;
+  }
+  footer.footer {
+    padding: 1em;
+    background: #353535;
+    color: white;
+    list-style-type: none;
+  }
+  footer.footer ul.foot {
+    margin: 0;
+    list-style-type: none;
+    color: white;
+  }
+  footer.footer ul.foot li {
+    margin: 1em auto;
+  }
+  footer.footer ul.foot li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto";
+    margin-top: 1em;
   }
 }
