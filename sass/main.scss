@@ -41,19 +41,20 @@ $first_col_width: 150px;
 
 
     div.container {
-
         margin: auto;
-       font-family: $myfont;
-
+        font-family: $myfont;
         background: $table_head_col;
         min-height: 46em;
         padding: 1em 1em;
-        border-radius: 1em 1em 0em 0em;
+        border-radius: 40px 40px 0px 0px;
+        -webkit-border-radius: 40px 40px 0px 0px;
+        -moz-border-radius: 40px 40px 0px 0px;
+        -ms-border-radius: 40px 40px 0px 0px;
+        -o-border-radius: 40px 40px 0px 0px;
         width: auto;
         display: block;
         position: relative;
-        h1 {
-           
+        h1{
            
             font-family: 'Shrikhand';
             font-style: italic;
@@ -61,6 +62,9 @@ $first_col_width: 150px;
             font-weight: 400;
             font-size: 28px;
             line-height: 41px;
+            i.fa-regular.fa-heart {
+                margin-left: 5em;
+            }
         }
         h2 {
             font-family: monospace;

@@ -31,7 +31,11 @@
     background: #F7F7F7;
     min-height: 46em;
     padding: 1em 1em;
-    border-radius: 1em 1em 0em 0em;
+    border-radius: 40px 40px 0px 0px;
+    -webkit-border-radius: 40px 40px 0px 0px;
+    -moz-border-radius: 40px 40px 0px 0px;
+    -ms-border-radius: 40px 40px 0px 0px;
+    -o-border-radius: 40px 40px 0px 0px;
     width: auto;
     display: block;
     position: relative;
@@ -43,6 +47,9 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 41px;
+  }
+  div.container h1 i.fa-regular.fa-heart {
+    margin-left: 5em;
   }
   div.container h2 {
     font-family: monospace;
