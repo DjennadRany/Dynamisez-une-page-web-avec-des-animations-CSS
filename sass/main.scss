@@ -5,6 +5,228 @@ $table_bor_col: #eee;
 $container_width: 100%;
 $first_col_width: 150px;
 
+body {
+    margin: 0;
+
+
+    /** header */
+    ul.head {
+        list-style-type: none;
+        margin: auto;
+        padding: 0;
+
+        img.logo {
+            width: 20%;
+            margin: auto;
+            display: block;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        img.imgf {
+            width: 100%;
+            height: 383px;
+            object-fit: cover;
+            object-position: bottom;
+            position: relative;
+        }
+    }
+
+    /** header */
+    /** contenaire general */
+    div.container {
+        margin: auto;
+        font-family: "Roboto", sans-serif;
+        background: #F7F7F7;
+        min-height: 46em;
+        padding: 1em 2em;
+        display: block;
+        position: relative;
+        top: -10em;
+        width: 80%;
+        .sous-containe {
+            width: 70%;
+            margin: auto;
+        }
+        h1 {
+            font-family: "Shrikhand", cursive;
+            font-style: italic;
+            font-weight: bold;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 41px;
+            display: inline;
+        }
+
+        h2 {
+            font-family: monospace;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 19px;
+            text-transform: uppercase;
+            border-bottom: 3px solid #99e2d0;
+            width: 10%;
+            padding: 7px 0px;
+        }
+
+        /** coeur */
+        .fa-regular.fa-heart {
+            float: right;
+            right: 30px;
+            position: relative;
+            display: block;
+            font-size: 30px;
+
+
+        }
+
+        .fa-regular.fa-heart:active {
+            float: right;
+            right: 30px;
+            position: relative;
+            display: block;
+            font-size: 30px;
+            opacity: 0;
+
+
+        }
+
+        .fa-sharp.fa-solid.fa-heart {
+            float: right;
+            right: 15px;
+            position: relative;
+            opacity: 0;
+            display: none;
+
+        }
+
+        @keyframes taadaa {
+            0% {
+                opacity: 0;
+                display: none;
+            }
+
+            100% {
+                opacity: 1;
+                display: block;
+            }
+        }
+            .fa-regular.fa-heart:active ~ .fa-sharp.fa-solid.fa-heart {
+                float: right;
+                right: 0px;
+                position: relative;
+                opacity: 1;
+                display: block;
+                font-size: 30px;
+                background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+                background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+                background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: taadaa 5s;
+                -webkit-animation: taadaa 5s;
+                animation-fill-mode: forwards;
+                -webkit-animation-fill-mode: forwards;
+                
+}
+
+
+            .fa-sharp.fa-solid.fa-heart:active ~.fa-regular.fa-heart {
+                display: none;
+            }
+
+            /** coeur */
+
+        }
+
+        /** contenaire general */
+        /** block produit */
+        .arti {
+            background: #FFFFFF;
+            padding: 1em;
+            border-radius: 1em;
+            box-shadow: 1px 3px 5px rgba(58, 58, 58, 0.53);
+            margin-bottom: 1em;
+            animation-duration: 5s;
+            animation-name: shownom;
+            height: 40px;
+            
+           
+            .artit {
+                text-overflow: ellipsis;
+                width: auto;
+                display: flex;
+                font-size: 15px;
+                p.artist {
+                    margin: 0;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: auto;
+                }
+                span.artip {
+                    display: flex;
+                    float: right;
+                    position: relative;
+                    margin-left: auto;
+                }
+            }
+             h3.titel {
+                margin: 0;
+                text-overflow: ellipsis;
+                width: auto;
+                display: flex;
+                white-space: nowrap;
+                overflow: hidden;
+                font-size: 18px;
+            }
+        }
+
+        .vali {
+            visibility: initial;
+            height: 55px;
+            opacity: 0;
+            position: absolute;
+            width: 85%;
+        }
+
+        :hover.vali {
+            visibility: visible;
+            display: inline;
+            opacity: 1;
+            display: inline-block;
+            float: right;
+            height: 40px;
+            width: 15%;
+            background: #00d1a1;
+            padding: 1em;
+            top: -1em;
+            position: relative;
+            color: white;
+            border-radius: 0px 16px 16px 0px;
+            left: 16px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        i.fa-solid.fa-circle-check {
+            font-size: 40px;
+        }
+        /** block produit */
+    }
+
+    /** container */
+
+
+/** body */
+
+
+@media screen and (max-width: 769.69px) {
 
     html {
         height: 100%;
@@ -26,7 +248,7 @@ $first_col_width: 150px;
         padding: 0;
 
         img.logo {
-            width: 80%;
+            width: 80%!important;
             margin: auto;
             display: block;
             margin-top: 1em;
@@ -53,7 +275,12 @@ $first_col_width: 150px;
         width: auto;
         display: block;
         position: relative;
-
+        top: 0em !important;
+        width: auto !important;
+        .sous-containe {
+         width: auto !important;
+            margin: auto;
+        }
         h1 {
 
             font-family: 'Shrikhand', cursive;
@@ -64,70 +291,76 @@ $first_col_width: 150px;
             line-height: 41px;
             display: inline;
         }
-            
-            .fa-regular.fa-heart {
-                float: right;
-                right: 30px;
-                position: relative;
-                display: block;
-                font-size: 30px;
-                
-            
-            }
-            .fa-regular.fa-heart:hover {
-                float: right;
-                right: 30px;
-                position: relative;
-                display: block;
-                font-size: 30px;
-                opacity: 0;
-                
-            
-            }
-           
-            .fa-sharp.fa-solid.fa-heart{
-                float: right;
-                right: 15px;
-                position: relative;
+
+        /** coeur */
+        .fa-regular.fa-heart {
+            float: right;
+            right: 30px;
+            position: relative;
+            display: block;
+            font-size: 30px;
+
+
+        }
+
+        .fa-regular.fa-heart:active {
+            float: right;
+            right: 30px;
+            position: relative;
+            display: block;
+            font-size: 30px;
+            opacity: 0;
+
+
+        }
+
+        .fa-sharp.fa-solid.fa-heart {
+            float: right;
+            right: 15px;
+            position: relative;
+            opacity: 0;
+            display: none;
+
+        }
+
+        @keyframes taadaa {
+            0% {
                 opacity: 0;
                 display: none;
-   
             }
-           
-            @keyframes taadaa { 
-                0% {
-                  opacity: 0;
-                }
-              
-                100% {
-                  opacity: 1;
-                }
-              }
-          .fa-regular.fa-heart:hover  ~  .fa-sharp.fa-solid.fa-heart{
-  float: right;
-  right: 0px;
-  position: relative;
-  opacity: 1;
-  display: block;
-  font-size: 30px;
-  background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-  background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-  background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: taadaa 2s ;
-  -webkit-animation: taadaa 2s ;
+
+            100% {
+                opacity: 1;
+                display: block;
+            }
+        }
+            .fa-regular.fa-heart:active ~ .fa-sharp.fa-solid.fa-heart {
+                float: right;
+                right: 0px;
+                position: relative;
+                opacity: 1;
+                display: block;
+                font-size: 30px;
+                background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+                background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+                background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: taadaa 5s;
+                -webkit-animation: taadaa 5s;
+                animation-fill-mode: forwards;
+                -webkit-animation-fill-mode: forwards;
+                
 }
 
-            
-            .fa-sharp.fa-solid.fa-heart:hover ~  .fa-regular.fa-heart{
+
+            .fa-sharp.fa-solid.fa-heart:active ~.fa-regular.fa-heart {
                 display: none;
             }
-           
-   
 
+            /** coeur */
         h2 {
             font-family: monospace;
             font-style: normal;
@@ -218,31 +451,7 @@ $first_col_width: 150px;
                 }
             }
 
-            @keyframes slidein {
-                from {
-
-
-
-                    visibility: hidden;
-                    position: relative;
-                    transform: translateY(-4vh);
-                    -webkit-transform: translateY(-4vh);
-                    -moz-transform: translateY(-4vh);
-                    -ms-transform: translateY(-4vh);
-                    -o-transform: translateY(-4vh);
-                }
-
-                to {
-                    transform: translateY(0);
-
-
-
-                    position: relative;
-
-                    visibility: visible;
-                }
-
-            }
+       
 
             .artit {
 
@@ -336,7 +545,7 @@ $first_col_width: 150px;
             li {
                 margin: 1em auto;
             }
-    
+
             li a {
                 text-decoration: none;
                 color: white;
@@ -345,5 +554,7 @@ $first_col_width: 150px;
             }
         }
 
-       
+
     }
+
+}
