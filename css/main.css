@@ -1,221 +1,274 @@
-@media (max-width: 767.98px) {
-  html {
-    height: 100%;
-  }
-  body {
-    margin: 0 !important;
-    margin: 0;
-    padding: 0;
-  }
-  nav {
-    height: 17em;
-  }
-  ul.head {
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-  }
-  ul.head img.logo {
-    width: 80%;
-    margin: auto;
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  ul.head img.imgf {
-    width: 100%;
-  }
-  div.container {
-    margin: auto;
-    font-family: "Roboto", sans-serif;
-    background: #F7F7F7;
-    min-height: 46em;
-    padding: 1em 1em;
-    border-radius: 40px 40px 0px 0px;
-    -webkit-border-radius: 40px 40px 0px 0px;
-    -moz-border-radius: 40px 40px 0px 0px;
-    -ms-border-radius: 40px 40px 0px 0px;
-    -o-border-radius: 40px 40px 0px 0px;
-    width: auto;
-    display: block;
-    position: relative;
-  }
-  div.container h1 {
-    font-family: "Shrikhand", cursive;
-    font-style: italic;
-    font-weight: bold;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 41px;
-  }
-  div.container h1 i.fa-regular.fa-heart {
-    margin-left: 30%;
-  }
-  div.container h2 {
-    font-family: monospace;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 19px;
-    text-transform: uppercase;
-    border-bottom: 3px solid #99e2d0;
-    width: 10%;
-    padding: 7px 0px;
-  }
-  div.container .vali {
-    visibility: initial;
-    height: 55px;
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0 !important;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 17em;
+}
+
+ul.head {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+}
+ul.head img.logo {
+  width: 80%;
+  margin: auto;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+ul.head img.imgf {
+  width: 100%;
+}
+
+div.container {
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  background: #F7F7F7;
+  min-height: 46em;
+  padding: 1em 1em;
+  border-radius: 40px 40px 0px 0px;
+  -webkit-border-radius: 40px 40px 0px 0px;
+  -moz-border-radius: 40px 40px 0px 0px;
+  -ms-border-radius: 40px 40px 0px 0px;
+  -o-border-radius: 40px 40px 0px 0px;
+  width: auto;
+  display: block;
+  position: relative;
+}
+div.container h1 {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-weight: bold;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+  display: inline;
+}
+div.container .fa-regular.fa-heart {
+  float: right;
+  right: 30px;
+  position: relative;
+  display: block;
+  font-size: 30px;
+}
+div.container .fa-regular.fa-heart:hover {
+  float: right;
+  right: 30px;
+  position: relative;
+  display: block;
+  font-size: 30px;
+  opacity: 0;
+}
+div.container .fa-sharp.fa-solid.fa-heart {
+  float: right;
+  right: 15px;
+  position: relative;
+  opacity: 0;
+  display: none;
+}
+@keyframes taadaa {
+  0% {
     opacity: 0;
-    position: absolute;
-    width: 85%;
   }
-  div.container :hover.vali {
-    visibility: visible;
-    display: inline;
+  100% {
     opacity: 1;
-    display: inline-block;
-    float: right;
+  }
+}
+div.container .fa-regular.fa-heart:hover ~ .fa-sharp.fa-solid.fa-heart {
+  float: right;
+  right: 0px;
+  position: relative;
+  opacity: 1;
+  display: block;
+  font-size: 30px;
+  background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+  background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+  background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: taadaa 2s;
+  -webkit-animation: taadaa 2s;
+}
+div.container .fa-sharp.fa-solid.fa-heart:hover ~ .fa-regular.fa-heart {
+  display: none;
+}
+div.container h2 {
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 19px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #99e2d0;
+  width: 10%;
+  padding: 7px 0px;
+}
+div.container .vali {
+  visibility: initial;
+  height: 55px;
+  opacity: 0;
+  position: absolute;
+  width: 85%;
+}
+div.container :hover.vali {
+  visibility: visible;
+  display: inline;
+  opacity: 1;
+  display: inline-block;
+  float: right;
+  height: 40px;
+  width: 15%;
+  background: #00d1a1;
+  padding: 1em;
+  top: -1em;
+  position: relative;
+  color: white;
+  border-radius: 0px 16px 16px 0px;
+  left: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+div.container :hover.vali i.fa-solid.fa-circle-check {
+  font-size: xx-large;
+  padding: 0px 6px;
+}
+div.container .arti {
+  background: #FFFFFF;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 1px 3px 5px rgba(58, 58, 58, 0.53);
+  margin-bottom: 1em;
+  animation-duration: 5s;
+  animation-name: shownom;
+  height: 40px;
+}
+@keyframes shownom {
+  0% {
     height: 40px;
-    width: 15%;
-    background: #00d1a1;
-    padding: 1em;
-    top: -1em;
-    position: relative;
-    color: white;
-    border-radius: 0px 16px 16px 0px;
-    left: 16px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-4vh);
+    -webkit-transform: translateY(-5vh);
+    -moz-transform: translateY(-5vh);
+    -ms-transform: translateY(-5vh);
+    -o-transform: translateY(-5vh);
   }
-  div.container :hover.vali i.fa-solid.fa-circle-check {
-    font-size: xx-large;
-    padding: 0px 6px;
-  }
-  div.container .arti {
-    background: #FFFFFF;
-    padding: 1em;
-    border-radius: 1em;
-    box-shadow: 1px 3px 5px rgba(58, 58, 58, 0.53);
+  100% {
     margin-bottom: 1em;
-    animation-duration: 5s;
-    animation-name: shownom;
-    height: 40px;
-  }
-  @keyframes shownom {
-    0% {
-      height: 40px;
-      visibility: hidden;
-      opacity: 0;
-      transform: translateY(-4vh);
-      -webkit-transform: translateY(-5vh);
-      -moz-transform: translateY(-5vh);
-      -ms-transform: translateY(-5vh);
-      -o-transform: translateY(-5vh);
-    }
-    100% {
-      margin-bottom: 1em;
-      visibility: visible;
-      opacity: 1;
-      position: relative;
-      transform: translateY(0vh);
-      -webkit-transform: translateY(0vh);
-      -moz-transform: translateY(0vh);
-      -ms-transform: translateY(0vh);
-      -o-transform: translateY(0vh);
-    }
-  }
-  @keyframes slidein {
-    from {
-      visibility: hidden;
-      position: relative;
-      transform: translateY(-4vh);
-      -webkit-transform: translateY(-4vh);
-      -moz-transform: translateY(-4vh);
-      -ms-transform: translateY(-4vh);
-      -o-transform: translateY(-4vh);
-    }
-    to {
-      transform: translateY(0);
-      position: relative;
-      visibility: visible;
-    }
-  }
-  div.container .arti .artit {
-    text-overflow: ellipsis;
-    width: auto;
-    display: flex;
-  }
-  div.container .arti .artit p.artist {
-    margin: 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: auto;
-  }
-  div.container .arti .artit span.artip {
-    display: flex;
-    float: right;
+    visibility: visible;
+    opacity: 1;
     position: relative;
-    margin-left: auto;
+    transform: translateY(0vh);
+    -webkit-transform: translateY(0vh);
+    -moz-transform: translateY(0vh);
+    -ms-transform: translateY(0vh);
+    -o-transform: translateY(0vh);
   }
-  div.container .arti h3.titel {
-    margin: 0;
-    text-overflow: ellipsis;
-    width: auto;
-    display: flex;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  div.container .btn-comm {
-    background: linear-gradient(#ed6fda, #9f57dd);
-    border-radius: 28px;
-    border: none;
-    box-shadow: 1px 2px 6px #505050;
-    width: 50%;
-    margin: auto;
-    color: white;
-    height: 3em;
+}
+@keyframes slidein {
+  from {
+    visibility: hidden;
     position: relative;
-    display: block;
-    margin-top: 4em;
-    margin-bottom: 2em;
+    transform: translateY(-4vh);
+    -webkit-transform: translateY(-4vh);
+    -moz-transform: translateY(-4vh);
+    -ms-transform: translateY(-4vh);
+    -o-transform: translateY(-4vh);
   }
-  div.container .btn-comm:hover {
-    background: #9f9f9f;
+  to {
+    transform: translateY(0);
+    position: relative;
+    visibility: visible;
   }
-  div.container table {
-    border: 1px solid #eee;
-  }
-  div.container table tr:nth-child(odd) {
-    background: #eee;
-  }
-  div.container table td:first-child {
-    width: 150px;
-  }
-  div.container table th {
-    background-color: #F7F7F7;
-  }
-  footer.footer {
-    padding: 1em;
-    background: #353535;
-    color: white;
-    list-style-type: none;
-  }
-  footer.footer ul.foot {
-    margin: 0;
-    list-style-type: none;
-    color: white;
-  }
-  footer.footer ul.foot li {
-    margin: 1em auto;
-  }
-  footer.footer ul.foot li a {
-    text-decoration: none;
-    color: white;
-    font-family: "Roboto";
-    margin-top: 1em;
-  }
+}
+div.container .arti .artit {
+  text-overflow: ellipsis;
+  width: auto;
+  display: flex;
+  font-size: 15px;
+}
+div.container .arti .artit p.artist {
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: auto;
+}
+div.container .arti .artit span.artip {
+  display: flex;
+  float: right;
+  position: relative;
+  margin-left: auto;
+}
+div.container .arti h3.titel {
+  margin: 0;
+  text-overflow: ellipsis;
+  width: auto;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 18px;
+}
+div.container .btn-comm {
+  background: linear-gradient(#ed6fda, #9f57dd);
+  border-radius: 28px;
+  border: none;
+  box-shadow: 1px 2px 6px #505050;
+  width: 50%;
+  margin: auto;
+  color: white;
+  height: 3em;
+  position: relative;
+  display: block;
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+div.container .btn-comm:hover {
+  background: #9f9f9f;
+}
+div.container table {
+  border: 1px solid #eee;
+}
+div.container table tr:nth-child(odd) {
+  background: #eee;
+}
+div.container table td:first-child {
+  width: 150px;
+}
+div.container table th {
+  background-color: #F7F7F7;
+}
+
+footer.footer {
+  padding: 1em;
+  background: #353535;
+  color: white;
+  list-style-type: none;
+}
+footer.footer ul.foot {
+  margin: 0;
+  list-style-type: none;
+  color: white;
+}
+footer.footer ul.foot li {
+  margin: 1em auto;
+}
+footer.footer ul.foot li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto";
+  margin-top: 1em;
 }

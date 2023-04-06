@@ -5,7 +5,6 @@ $table_bor_col: #eee;
 $container_width: 100%;
 $first_col_width: 150px;
 
-@media (max-width: 767.98px) {
 
     html {
         height: 100%;
@@ -63,11 +62,71 @@ $first_col_width: 150px;
             font-weight: 400;
             font-size: 28px;
             line-height: 41px;
-
-            i.fa-regular.fa-heart {
-                margin-left: 30%;
-            }
+            display: inline;
         }
+            
+            .fa-regular.fa-heart {
+                float: right;
+                right: 30px;
+                position: relative;
+                display: block;
+                font-size: 30px;
+                
+            
+            }
+            .fa-regular.fa-heart:hover {
+                float: right;
+                right: 30px;
+                position: relative;
+                display: block;
+                font-size: 30px;
+                opacity: 0;
+                
+            
+            }
+           
+            .fa-sharp.fa-solid.fa-heart{
+                float: right;
+                right: 15px;
+                position: relative;
+                opacity: 0;
+                display: none;
+   
+            }
+           
+            @keyframes taadaa { 
+                0% {
+                  opacity: 0;
+                }
+              
+                100% {
+                  opacity: 1;
+                }
+              }
+          .fa-regular.fa-heart:hover  ~  .fa-sharp.fa-solid.fa-heart{
+  float: right;
+  right: 0px;
+  position: relative;
+  opacity: 1;
+  display: block;
+  font-size: 30px;
+  background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+  background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+  background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: taadaa 2s ;
+  -webkit-animation: taadaa 2s ;
+}
+
+            
+            .fa-sharp.fa-solid.fa-heart:hover ~  .fa-regular.fa-heart{
+                display: none;
+            }
+           
+   
 
         h2 {
             font-family: monospace;
@@ -190,6 +249,7 @@ $first_col_width: 150px;
                 text-overflow: ellipsis;
                 width: auto;
                 display: flex;
+                font-size: 15px;
 
                 p.artist {
                     margin: 0;
@@ -215,6 +275,7 @@ $first_col_width: 150px;
                 display: flex;
                 white-space: nowrap;
                 overflow: hidden;
+                font-size: 18px;
             }
 
 
@@ -286,4 +347,3 @@ $first_col_width: 150px;
 
        
     }
-}
