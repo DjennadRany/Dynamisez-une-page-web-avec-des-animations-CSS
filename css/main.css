@@ -37,6 +37,28 @@ body div.container {
   top: -10em;
   width: 80%;
   /** coeur */
+  /*
+              .fa-regular.fa-heart:active ~ .fa-sharp.fa-solid.fa-heart {
+                  float: right;
+                  right: 0px;
+                  position: relative;
+                  opacity: 1;
+                  display: block;
+                  font-size: 30px;
+                  background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+                  background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+                  background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+                  -webkit-background-clip: text;
+                  -moz-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  animation: taadaa 5s;
+                  -webkit-animation: taadaa 5s;
+                  animation-fill-mode: forwards;
+                  -webkit-animation-fill-mode: forwards;
+
+  }
+  */
   /** coeur */
 }
 body div.container .sous-containe {
@@ -63,16 +85,17 @@ body div.container h2 {
   width: 10%;
   padding: 7px 0px;
 }
+body div.container .coeur {
+  display: contents;
+}
 body div.container .fa-regular.fa-heart {
   float: right;
-  right: 30px;
   position: relative;
   display: block;
   font-size: 30px;
 }
-body div.container .fa-regular.fa-heart:active {
+body div.container .fa-regular.fa-heart:checked {
   float: right;
-  right: 30px;
   position: relative;
   display: block;
   font-size: 30px;
@@ -95,7 +118,10 @@ body div.container .fa-sharp.fa-solid.fa-heart {
     display: block;
   }
 }
-body div.container .fa-regular.fa-heart:active ~ .fa-sharp.fa-solid.fa-heart {
+body div.container #btnControl {
+  display: none;
+}
+body div.container #btnControl:checked + label > .fa-sharp.fa-solid.fa-heart {
   float: right;
   right: 0px;
   position: relative;
@@ -114,7 +140,7 @@ body div.container .fa-regular.fa-heart:active ~ .fa-sharp.fa-solid.fa-heart {
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
-body div.container .fa-sharp.fa-solid.fa-heart:active ~ .fa-regular.fa-heart {
+body div.container #btnControl:checked + label > .fa-regular.fa-heart {
   display: none;
 }
 body .arti {
@@ -248,16 +274,17 @@ body i.fa-solid.fa-circle-check {
     line-height: 41px;
     display: inline;
   }
+  div.container .coeur {
+    display: contents;
+  }
   div.container .fa-regular.fa-heart {
     float: right;
-    right: 30px;
     position: relative;
     display: block;
     font-size: 30px;
   }
-  div.container .fa-regular.fa-heart:active {
+  div.container .fa-regular.fa-heart:checked {
     float: right;
-    right: 30px;
     position: relative;
     display: block;
     font-size: 30px;
@@ -280,7 +307,10 @@ body i.fa-solid.fa-circle-check {
       display: block;
     }
   }
-  div.container .fa-regular.fa-heart:active ~ .fa-sharp.fa-solid.fa-heart {
+  div.container #btnControl {
+    display: none;
+  }
+  div.container #btnControl:checked + label > .fa-sharp.fa-solid.fa-heart {
     float: right;
     right: 0px;
     position: relative;
@@ -299,7 +329,7 @@ body i.fa-solid.fa-circle-check {
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
   }
-  div.container .fa-sharp.fa-solid.fa-heart:active ~ .fa-regular.fa-heart {
+  div.container #btnControl:checked + label > .fa-regular.fa-heart {
     display: none;
   }
   div.container h2 {

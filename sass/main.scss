@@ -71,9 +71,12 @@ body {
         }
 
         /** coeur */
+        .coeur {
+    display: contents;
+}
         .fa-regular.fa-heart {
             float: right;
-            right: 30px;
+           
             position: relative;
             display: block;
             font-size: 30px;
@@ -81,9 +84,9 @@ body {
 
         }
 
-        .fa-regular.fa-heart:active {
+        .fa-regular.fa-heart:checked  {
             float: right;
-            right: 30px;
+         
             position: relative;
             display: block;
             font-size: 30px;
@@ -112,6 +115,31 @@ body {
                 display: block;
             }
         }
+        #btnControl {
+            display: none;
+        }
+        #btnControl:checked + label > .fa-sharp.fa-solid.fa-heart {
+
+            float: right;
+            right: 0px;
+            position: relative;
+            opacity: 1;
+            display: block;
+            font-size: 30px;
+            background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+            background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+            background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: taadaa 5s;
+            -webkit-animation: taadaa 5s;
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+        }
+        
+        /*
             .fa-regular.fa-heart:active ~ .fa-sharp.fa-solid.fa-heart {
                 float: right;
                 right: 0px;
@@ -132,9 +160,9 @@ body {
                 -webkit-animation-fill-mode: forwards;
                 
 }
+*/
 
-
-            .fa-sharp.fa-solid.fa-heart:active ~.fa-regular.fa-heart {
+            #btnControl:checked + label > .fa-regular.fa-heart {
                 display: none;
             }
 
@@ -292,75 +320,82 @@ body {
             display: inline;
         }
 
-        /** coeur */
-        .fa-regular.fa-heart {
-            float: right;
-            right: 30px;
-            position: relative;
-            display: block;
-            font-size: 30px;
-
-
+           /** coeur */
+           .coeur {
+            display: contents;
         }
-
-        .fa-regular.fa-heart:active {
-            float: right;
-            right: 30px;
-            position: relative;
-            display: block;
-            font-size: 30px;
-            opacity: 0;
-
-
-        }
-
-        .fa-sharp.fa-solid.fa-heart {
-            float: right;
-            right: 15px;
-            position: relative;
-            opacity: 0;
-            display: none;
-
-        }
-
-        @keyframes taadaa {
-            0% {
-                opacity: 0;
-                display: none;
-            }
-
-            100% {
-                opacity: 1;
-                display: block;
-            }
-        }
-            .fa-regular.fa-heart:active ~ .fa-sharp.fa-solid.fa-heart {
-                float: right;
-                right: 0px;
-                position: relative;
-                opacity: 1;
-                display: block;
-                font-size: 30px;
-                background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-                background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-                background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                animation: taadaa 5s;
-                -webkit-animation: taadaa 5s;
-                animation-fill-mode: forwards;
-                -webkit-animation-fill-mode: forwards;
+                .fa-regular.fa-heart {
+                    float: right;
+                   
+                    position: relative;
+                    display: block;
+                    font-size: 30px;
+        
+        
+                }
+        
+                .fa-regular.fa-heart:checked  {
+                    float: right;
+                 
+                    position: relative;
+                    display: block;
+                    font-size: 30px;
+                    opacity: 0;
+        
+        
+                }
+        
+                .fa-sharp.fa-solid.fa-heart {
+                    float: right;
+                    right: 15px;
+                    position: relative;
+                    opacity: 0;
+                    display: none;
+        
+                }
+        
+                @keyframes taadaa {
+                    0% {
+                        opacity: 0;
+                        display: none;
+                    }
+        
+                    100% {
+                        opacity: 1;
+                        display: block;
+                    }
+                }
+                #btnControl {
+                    display: none;
+                }
+                #btnControl:checked + label > .fa-sharp.fa-solid.fa-heart {
+        
+                    float: right;
+                    right: 0px;
+                    position: relative;
+                    opacity: 1;
+                    display: block;
+                    font-size: 30px;
+                    background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+                    background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+                    background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: taadaa 5s;
+                    -webkit-animation: taadaa 5s;
+                    animation-fill-mode: forwards;
+                    -webkit-animation-fill-mode: forwards;
+                }
                 
-}
-
-
-            .fa-sharp.fa-solid.fa-heart:active ~.fa-regular.fa-heart {
-                display: none;
-            }
-
-            /** coeur */
+           
+        
+                    #btnControl:checked + label > .fa-regular.fa-heart {
+                        display: none;
+                    }
+        
+                    /** coeur */
         h2 {
             font-family: monospace;
             font-style: normal;
