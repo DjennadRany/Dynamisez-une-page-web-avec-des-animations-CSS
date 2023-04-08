@@ -24,11 +24,13 @@ body {
         }
 
         img.imgf {
-            width: 100%;
-            height: 383px;
-            object-fit: cover;
-            object-position: bottom;
-            position: relative;
+           
+    width: 100%;
+    height: 318px;
+    object-fit: cover;
+    position: relative;
+    object-position: center;
+
         }
     }
 
@@ -42,8 +44,10 @@ body {
         padding: 1em 2em;
         display: block;
         position: relative;
-        top: -10em;
+        top: -3em;
         width: 80%;
+        border-radius: 20px 20px 0 0;
+        margin-bottom: -3em;
         .sous-containe {
             width: 70%;
             margin: auto;
@@ -246,6 +250,54 @@ body {
             font-size: 40px;
         }
         /** block produit */
+
+ /** block button  */
+        .btn-comm {
+            background: linear-gradient(#ed6fda, #9f57dd);
+            border-radius: 28px;
+            border: none;
+            box-shadow: 1px 2px 6px #505050;
+            width: 50%;
+            margin: auto;
+            color: white;
+            height: 3em;
+            position: relative;
+            display: block;
+            margin-top: 4em;
+            margin-bottom: 2em;
+            .btn-comm:hover {
+                background: #9f9f9f;
+            }
+        }
+        .btn-comm:hover {
+            background: #9f9f9f;
+        }
+ /** block button  */
+ /** Footer  */
+ footer.footer {
+    padding: 1em;
+    background: #353535;
+    color: white;
+    list-style-type: none;
+    ul.foot {
+        margin: 0;
+        list-style-type: none;
+        color: white;
+
+        li {
+            margin: 1em auto;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: "Roboto";
+                margin-top: 1em;
+            }
+        }
+    }
+}
+
+ /** Footer  */
     }
 
     /** container */
