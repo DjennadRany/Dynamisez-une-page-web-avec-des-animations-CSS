@@ -421,15 +421,26 @@ body footer.footer ul.foot li a {
     font-size: xx-large;
     padding: 0px 6px;
   }
+  div.container .block-1 {
+    animation-delay: 1s;
+  }
+  div.container .block-2 {
+    animation-delay: 2s;
+  }
+  div.container .block-3 {
+    animation-delay: 3s;
+  }
   div.container .arti {
     background: #FFFFFF;
     padding: 1em;
     border-radius: 1em;
     box-shadow: 1px 3px 5px rgba(58, 58, 58, 0.53);
     margin-bottom: 1em;
-    animation-duration: 5s;
+    visibility: hidden;
     animation-name: shownom;
+    animation-duration: 3s;
     height: 40px;
+    animation-fill-mode: forwards;
   }
   @keyframes shownom {
     0% {

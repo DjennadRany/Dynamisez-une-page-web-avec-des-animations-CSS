@@ -497,18 +497,31 @@ body {
 
 
         }
+        .block-1{
+            animation-delay: 1s;
 
+        }
+        
+
+        .block-2{
+            animation-delay: 2s;
+
+        }
+        .block-3{
+            animation-delay: 3s;
+        }
         .arti {
             background: #FFFFFF;
             padding: 1em;
             border-radius: 1em;
             box-shadow: 1px 3px 5px rgb(58 58 58 / 53%);
             margin-bottom: 1em;
-            animation-duration: 5s;
+            visibility: hidden;
             animation-name: shownom;
+            animation-duration: 2s;
             height: 40px;
-
-
+            animation-fill-mode: forwards;
+            
 
             @keyframes shownom {
                 0% {
