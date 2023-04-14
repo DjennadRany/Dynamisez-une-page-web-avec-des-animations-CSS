@@ -550,7 +550,7 @@ body footer.footer ul.foot li a {
     margin-bottom: 2em;
   }
   div.container .btn-comm:hover {
-    background: #9f9f9f;
+    background: linear-gradient(#fac4f2, #9f57dd);
   }
   div.container table {
     border: 1px solid #eee;
