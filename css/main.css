@@ -226,7 +226,7 @@ body .vali {
   height: 55px;
   opacity: 0;
   position: absolute;
-  width: 65%;
+  width: 99%;
 }
 body :hover.vali {
   visibility: visible;
@@ -266,11 +266,8 @@ body .btn-comm {
   margin-top: 4em;
   margin-bottom: 2em;
 }
-body .btn-comm .btn-comm:hover {
-  background: #9f9f9f;
-}
 body .btn-comm:hover {
-  background: #9f9f9f;
+  background: linear-gradient(#fac4f2, #9f57dd);
 }
 body footer.footer {
   padding: 1em;
@@ -518,7 +515,14 @@ body footer.footer ul.foot li a {
     position: relative;
     margin-left: auto;
   }
-  div.container .arti h3.titel {
+  div.container .arti .tit-blo {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: auto;
+    display: block;
+    overflow: hidden;
+  }
+  div.container .arti .tit-blo h3.titel {
     margin: 0;
     text-overflow: ellipsis;
     width: auto;
@@ -526,6 +530,10 @@ body footer.footer ul.foot li a {
     white-space: nowrap;
     overflow: hidden;
     font-size: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
   }
   div.container .btn-comm {
     background: linear-gradient(#ed6fda, #9f57dd);

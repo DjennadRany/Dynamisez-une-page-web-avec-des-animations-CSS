@@ -265,7 +265,7 @@ body {
             height: 55px;
             opacity: 0;
             position: absolute;
-            width: 65%;
+            width: 99%;
         }
 
         :hover.vali {
@@ -308,12 +308,10 @@ body {
             display: block;
             margin-top: 4em;
             margin-bottom: 2em;
-            .btn-comm:hover {
-                background: #9f9f9f;
-            }
+            
         }
         .btn-comm:hover {
-            background: #9f9f9f;
+            background: linear-gradient(#fac4f2, #9f57dd);
         }
  /** block button  */
  /** Footer  */
@@ -619,16 +617,28 @@ body {
                 }
 
             }
-
-            h3.titel {
-                margin: 0;
+            .tit-blo {
+                white-space: nowrap;
                 text-overflow: ellipsis;
                 width: auto;
-                display: flex;
-                white-space: nowrap;
+                display: block;
                 overflow: hidden;
-                font-size: 18px;
+
+                h3.titel {
+                    margin: 0;
+    text-overflow: ellipsis;
+    width: auto;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+                }
             }
+           
 
 
         }
