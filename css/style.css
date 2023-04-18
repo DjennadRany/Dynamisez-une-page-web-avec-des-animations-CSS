@@ -1016,6 +1016,7 @@
   body ul.head li {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
   }
@@ -1318,12 +1319,24 @@
     margin: auto;
     padding: 0;
   }
+  ul.head li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
   ul.head img.logo {
-    width: 80% !important;
-    margin: auto;
+    width: 40% !important;
+    margin: 0em 4em;
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
+  }
+  ul.head i.fa-solid.fa-arrow-left {
+    font-size: -webkit-xxx-large;
+    color: black;
+    margin-left: 1em;
+    position: relative;
   }
   ul.head img.imgf {
     width: 100%;

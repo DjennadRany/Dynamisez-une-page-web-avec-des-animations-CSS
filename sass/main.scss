@@ -16,9 +16,10 @@ body {
         padding: 0;
         li {
             display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
 
     i.fa-solid.fa-arrow-left {
         font-size: -webkit-xxx-large;
@@ -399,15 +400,25 @@ body {
         list-style-type: none;
         margin: auto;
         padding: 0;
-
-        img.logo {
-            width: 80% !important;
-            margin: auto;
-            display: block;
-            margin-top: 1em;
-            margin-bottom: 1em;
+        li {
+            display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
         }
-
+        img.logo {
+            width: 40% !important;
+    margin: 0em 4em;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+        }
+        i.fa-solid.fa-arrow-left {
+            font-size: -webkit-xxx-large;
+            color: black;
+            margin-left: 1em;
+            position: relative;
+        }
         img.imgf {
             width: 100%;
         }
