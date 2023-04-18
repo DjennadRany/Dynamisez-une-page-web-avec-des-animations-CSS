@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,162 +17,159 @@
     <nav>
         <ul class="head">
             <li><img class="logo" src="images/logo/ohmyfood.png"></li>
-            <li><img class="imgf" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"></li>
         </ul>
     </nav>
 </header>
 
-<body>
+<body class="container-reserv">
 
-    <div class="container">
-        <div class="sous-containe">
-            <div class="titel-heart">
-                <h1>À la française </h1>
-
-                <div class="coeur">
-                    <input type="checkbox" id="btnControl" />
-                    <label class="btn" for="btnControl">
-                        <div class="fa-regular fa-heart"></div>
-                        <div class="fa-sharp fa-solid fa-heart"></div>
-                    </label>
-                </div>
-            </div>
-            <section class="entré tit">
-                <h2>Entrées</h2>
-
-                <div class="arti block-1">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Tartare de poulpe acidulé
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Aux zestes d'orange </p><span class="artip">25€</span>
-
-                    </div>
-                </div>
-                <div class="arti block-2">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Velouté de légumes d'antan
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Carotte, panais, topinambour </p><span class="artip">35€</span>
-
-                    </div>
-                </div>
-                <div class="arti block-3">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Soupe à l'oignon
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Revisitée </p><span class="artip">20€</span>
-
-                    </div>
-                </div>
-            </section>
-            <br>
-            <section class="plat tit">
-                <h2>Plats</h2>
-                <div class="arti block-1">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Coquilles Saint-Jacques
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Accompagnées d'une purée de panais </p><span class="artip">40€</span>
-
-                    </div>
-                </div>
-
-                <div class="arti block-2">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Magret de canard
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Et parmentier de pommes de terre </p><span class="artip">35€</span>
-
-                    </div>
-                </div>
-                <div class="arti block-3">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Pigeonneau d’Ille-et-Vilaine
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Sur son lit de gnocchis aux légumes </p><span class="artip">44€</span>
-
-                    </div>
-                </div>
-            </section>
-            <br>
-            <section class="dessert tit">
-                <h2>Desserts</h2>
-                <div class="arti block-1">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Pétales de violettes glacés
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Et purée de noisettes </p><span class="artip">18€</span>
-
-                    </div>
-                </div>
-                <div class="arti block-2">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Fondant au chocolat
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Revisité</p><span class="artip">22€</span>
-
-                    </div>
-                </div>
-                <div class="arti block-3">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Millefeuille croustillant
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Myrtilles et pâte d’amande </p><span class="artip">23€</span>
-
-                    </div>
-                </div>
-            </section>
+    <section>
+        <div class="loca">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Paris, Belleville</p>
+        </div>
+        <div class="reserv-men">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d’exception, sélectionnés par nos soins. </p>
             <section class="btcoman">
                 <div>
                     <button class="btn-comm" type="button">
-                        Commande
+                        Explorer nos restaurants
                     </button>
                 </div>
             </section>
         </div>
+    </section>
+    <section>
+        <div class="fonct">
+            <h3>Fonctionnement</h3>
+            <div class="block-conf">
+
+                <div class="cont-fon">
+                    <div class="bill">1</div>
+                    <i class="fa-sharp fa-solid fa-mobile-screen-button ico-sol "></i>
+                    <div class="choz">Choisissez un restaurant</div>
+                </div>
+
+                <div class="cont-fon">
+                    <div class="bill">2</div>
+                    <i class="fa-solid fa-list ico-sol "></i>
+                    <div class="choz">Composez votre menu</div>
+                </div>
+
+                <div class="cont-fon">
+                    <div class="bill">3</div>
+                    <i class="fa-sharp fa-solid fa-store ico-sol "></i>
+                    <div class="choz">Dégustez au restaurant</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="fonct tox">
+            <div class="tibox">
+                <h3>Restaurants</h3>
+            </div>
+            <div class="restorant">
+
+                <div class="block-rest">
+
+                    <div class="img-rest">
+                        <a href="La_palette_du_goût.html">
+                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                alt="placeholder" /></a>
+                    </div>
+                    <div class="unbl-rest">
+                        <div class="coeur">
+                            <input type="checkbox" id="btnControl" class="btnControl" />
+                            <label class="btn" for="btnControl">
+                                <div class="fa-regular fa-heart coeur-vide"></div>
+                                <div class="fa-sharp fa-solid fa-heart coeure-plein"></div>
+                            </label>
+                        </div>
+                        <a href="La_palette_du_goût.html">
+                            <h3 class="tit-blo">La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="block-rest">
+
+                    <div class="img-rest">
+                        <a href="La_note_enchantée.html">
+                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="placeholder" /></a>
+                    </div>
+                    <div class="unbl-rest">
+                        <div class="coeur">
+                            <input type="checkbox" id="btnControl2" class="btnControl2" />
+                            <label class="btn" for="btnControl2">
+                                <div class="fa-regular fa-heart coeur-vide2"></div>
+                                <div class="fa-sharp fa-solid fa-heart coeure-plein2"></div>
+                            </label>
+                        </div>
+                        <a href="La_note_enchantée.html">
+                            <h3 class="tit-blo">La note enchantée</h3>
+                            <p>Charonne</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="block-rest">
+
+                    <div class="img-rest">
+                        <a href="à_la_française.html">
+                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="placeholder" /></a>
+                    </div>
+                    <div class="unbl-rest">
+                        <div class="coeur">
+                            <input type="checkbox" id="btnControl3" class="btnControl3" />
+                            <label class="btn" for="btnControl3">
+                                <div class="fa-regular fa-heart coeur-vide3"></div>
+                                <div class="fa-sharp fa-solid fa-heart coeure-plein3"></div>
+                            </label>
+                        </div>
+                        <a href="à_la_française.html">
+                            <h3 class="tit-blo">À la française</h3>
+                            <p>Cité Rouge</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="block-rest">
+
+                    <div class="img-rest">
+                        <a href="Le_délice_des_sens.html">
+                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                alt="placeholder" /></a>
+                    </div>
+                    <div class="unbl-rest">
+                        <div class="coeur">
+                            <input type="checkbox" id="btnControl4" class="btnControl4" />
+                            <label class="btn" for="btnControl4">
+                                <div class="fa-regular fa-heart coeur-vide4"></div>
+                                <div class="fa-sharp fa-solid fa-heart coeure-plein4"></div>
+                            </label>
+                        </div>
+                        <a href="Le_délice_des_sens.html">
+                            <h3 class="tit-blo">Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     </div>
     <footer class="footer">
+        <div class="block-log"><img class="logo-foo" src="images/logo/ohmyfood@2x.svg" /></div>
         <ul class="foot">
-            <li><a href="#"><i class="icon-"></i>Proposer un resteaurant </a></li>
-            <li><a href="#"><i class="icon-"></i>Proposer un resteaurant </a></li>
+            <li><a href="#"><i class="fa-solid fa-utensils icon-lef"></i>Proposer un resteaurant </a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-handshake-angle icon-lef"></i>Devenir partenaire</a></li>
             <li><a href="#">Mention légales</a></li>
             <li><a href="#">Contact</a></li>
+            <li><a href="#"></a></li>
         </ul>
     </footer>
 </body>
