@@ -48,7 +48,12 @@
   color: white;
   height: 3em;
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
 }
 .reserv-men .btn-comm:hover {
   background: linear-gradient(#fac4f2, #9f57dd);
@@ -386,7 +391,12 @@
     color: white;
     height: 3em;
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
   }
   .reserv-men .btn-comm:hover {
     background: linear-gradient(#fac4f2, #9f57dd);
@@ -725,7 +735,12 @@
     color: white;
     height: 3em;
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
   }
   .reserv-men .btn-comm:hover {
     background: linear-gradient(#fac4f2, #9f57dd);
