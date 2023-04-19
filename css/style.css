@@ -1218,15 +1218,25 @@
     position: absolute;
     width: 99%;
   }
+  @keyframes vali {
+    0% {
+      width: 5%;
+    }
+    100% {
+      width: 15%;
+    }
+  }
   body :hover.vali {
+    animation: vali 3s;
+    -webkit-animation: vali 3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
     visibility: visible;
-    display: inline;
     opacity: 1;
-    display: inline-block;
     float: right;
     height: 40px;
     width: 15%;
-    background: #00d1a1;
+    background: #99E2D0;
     padding: 1em;
     top: -1em;
     position: relative;
@@ -1327,13 +1337,13 @@
   }
   ul.head img.logo {
     width: 40% !important;
-    margin: 0em auto;
+    margin: 0em 18%;
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
   }
   ul.head i.fa-solid.fa-arrow-left {
-    font-size: -webkit-xxx-large;
+    font-size: xx-large;
     color: black;
     margin-left: 1em;
     position: relative;
@@ -1449,17 +1459,27 @@
     height: 55px;
     opacity: 0;
     position: absolute;
-    width: 85%;
+    width: 99%;
+  }
+  @keyframes vali {
+    0% {
+      width: 5%;
+    }
+    100% {
+      width: 15%;
+    }
   }
   div.container :hover.vali {
+    animation: vali 3s;
+    -webkit-animation: vali 3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
     visibility: visible;
-    display: inline;
     opacity: 1;
-    display: inline-block;
     float: right;
     height: 40px;
     width: 15%;
-    background: #00d1a1;
+    background: #99E2D0;
     padding: 1em;
     top: -1em;
     position: relative;
@@ -1471,7 +1491,6 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-    margin-left: 5px;
   }
   div.container :hover.vali i.fa-solid.fa-circle-check {
     font-size: xx-large;
