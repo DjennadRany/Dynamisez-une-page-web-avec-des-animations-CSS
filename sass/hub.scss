@@ -30,7 +30,9 @@
      display: block;
      background: #F7F7F7;
      padding: 1em;
-
+     a {
+        text-decoration: none;
+    }
      h1 {
          margin: 1em;
          text-align: center;
@@ -478,6 +480,10 @@
          background: #F7F7F7;
          padding: 1em;
 
+    
+        a {
+            text-decoration: none;
+        }
          h1 {
              margin: 1em;
              text-align: center;
@@ -927,7 +933,9 @@
          display: block;
          background: #F7F7F7;
          padding: 1em;
-
+         a {
+            text-decoration: none;
+        }
          h1 {
              margin: 1em;
              font-weight: 700;

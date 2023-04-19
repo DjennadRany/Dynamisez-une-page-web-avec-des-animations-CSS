@@ -27,6 +27,9 @@
   background: #F7F7F7;
   padding: 1em;
 }
+.reserv-men a {
+  text-decoration: none;
+}
 .reserv-men h1 {
   margin: 1em;
   text-align: center;
@@ -362,6 +365,9 @@
     background: #F7F7F7;
     padding: 1em;
   }
+  .reserv-men a {
+    text-decoration: none;
+  }
   .reserv-men h1 {
     margin: 1em;
     text-align: center;
@@ -694,6 +700,9 @@
     display: block;
     background: #F7F7F7;
     padding: 1em;
+  }
+  .reserv-men a {
+    text-decoration: none;
   }
   .reserv-men h1 {
     margin: 1em;
@@ -1135,8 +1144,8 @@
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: taadaa 5s;
-    -webkit-animation: taadaa 5s;
+    animation: taadaa 3s;
+    -webkit-animation: taadaa 3s;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
   }
@@ -1220,10 +1229,11 @@
   }
   body .vali {
     visibility: initial;
-    height: 55px;
+    height: 73px;
     opacity: 0;
     position: absolute;
     width: 99%;
+    top: 0px;
   }
   @keyframes vali {
     0% {
@@ -1264,14 +1274,14 @@
     border-radius: 28px;
     border: none;
     box-shadow: 1px 2px 6px #505050;
-    width: 50%;
+    width: 35%;
     margin: auto;
     color: white;
-    height: 3em;
     position: relative;
     display: block;
     margin-top: 4em;
     margin-bottom: 2em;
+    height: 4em;
   }
   body .btn-comm:hover {
     background: linear-gradient(#fac4f2, #9f57dd);
@@ -1442,8 +1452,8 @@
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: taadaa 5s;
-    -webkit-animation: taadaa 5s;
+    animation: taadaa 3s;
+    -webkit-animation: taadaa 3s;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
   }
@@ -1463,10 +1473,11 @@
   }
   div.container .vali {
     visibility: initial;
-    height: 55px;
+    height: 73px;
     opacity: 0;
     position: absolute;
     width: 99%;
+    top: 0px;
   }
   @keyframes vali {
     0% {
