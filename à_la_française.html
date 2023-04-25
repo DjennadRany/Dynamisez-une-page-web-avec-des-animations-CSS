@@ -4,183 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/dist/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
-    <title>à la française</title>
+    <title>À la française</title>
 </head>
-
 
 <body>
     <header>
         <nav>
-            <ul class="head">
+            <ul class="nav">
                 <li><a href="index.html"> <i class="fa-solid fa-arrow-left"></i></a><img class="logo"
-                        src="images/logo/ohmyfood.png" alt="logo"></li>
-                <li><img class="imgf" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                        alt="à la française"></li>
+                        src="src/assets/img/logo/ohmyfood.png" alt="logo"></li>
+                <li><img class="imgf" src="src/assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                        alt="La note enchantée"></li>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="sous-containe">
-            <div class="titel-heart">
-                <h1>À la française </h1>
 
-                <div class="coeur">
-                    <input type="checkbox" id="btnControl">
-                    <label class="btn" for="btnControl">
-                        <span class="fa-regular fa-heart"></span>
-                        <span class="fa-sharp fa-solid fa-heart"></span>
-                    </label>
-                </div>
-            </div>
-            <section class="entré tit">
-                <h2>Entrées</h2>
+    <main>
+        <div class="container">
+            <div class="sous-containe">
+                <section class="titel-heart">
+                    <h1>À la française</h1>
+                    <div class="coeur">
+                        <input type="checkbox" id="btnControl" class="btnControl">
+                        <label class="btn" for="btnControl">
+                            <span class="fa-regular fa-heart coeur-vide"></span>
+                            <span class="fa-sharp fa-solid fa-heart coeure-plein"></span>
+                        </label>
+                    </div>
+                </section>
+                <section class="entré tit">
+                    <h2>Entrées</h2>
 
-                <div class="arti block-1">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Tartare de poulpe acidulé
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Aux zestes d'orange </p><span class="artip">25€</span>
+                    <article class="block-1">
+                        <div class="content">
+                            <h3>Tartare de poulpe acidulé</h3>
+                            <p>Aux zestes d'orange</p>
+                        </div>
+                        <div class="price">25€</div>
+                        <div class="validation"><i class="fa-solid fa-circle-check"></i></div>
+                    </article>
+                    <article class="block-2">
+                        <div class="content">
+                            <h3>Velouté de légumes d'antan </h3>
+                            <p>Carotte, panais, topinambour</p>
+                        </div>
+                        <div class="price">35€</div>
+                        <div class="validation"><i class="fa-solid fa-circle-check"></i></div>
+                    </article>
+                    <article class="block-3">
+                        <div class="content">
+                            <h3>Soupe à l'oignon</h3>
+                            <p>Revisitée</p>
+                        </div>
+                        <div class="price">20€</div>
+                        <div class="validation"><i class="fa-solid fa-circle-check"></i></div>
+                    </article>
+                </section>    
+                <section class="entré tit">
+                    <h2>Plats</h2>
 
-                    </div>
-                </div>
-                <div class="arti block-2">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Velouté de légumes d'antan
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Carotte, panais, topinambour </p><span class="artip">35€</span>
+                    <article class="block-1">
+                        <div class="content">
+                            <h3>Coquilles Saint-Jacques</h3>
+                            <p>Accompagnées d'une purée de panais</p>
+                        </div>
+                        <div class="price">40€</div>
+                        <div class="validation"><i class="fa-solid fa-circle-check"></i></div>
+                    </article>
+                    <article class="block-2">
+                        <div class="content">
+                            <h3>Magret de canard</h3>
+                            <p>Et parmentier de pommes de terre</p>
+                        </div>
+                        <div class="price">35€</div>
+                        <div class="validation"><i class="fa-solid fa-circle-check"></i></div>
+                    </article>
+                    <article class="block-3">
+                        <div class="content">
+                            <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                            <p>Sur son lit de gnocchis aux légumes</p>
+                        </div>
+                        <div class="price">44€</div>
+                        <div class="validation"><i class="fa-solid fa-circle-check"></i></div>
+                    </article>
+                </section>   
+                <section class="entré tit">
+                    <h2>Desserts</h2>
 
-                    </div>
-                </div>
-                <div class="arti block-3">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Soupe à l'oignon
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Revisitée </p><span class="artip">20€</span>
-
-                    </div>
-                </div>
-            </section>
-            <br>
-            <section class="plat tit">
-                <h2>Plats</h2>
-                <div class="arti block-1">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Coquilles Saint-Jacques
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Accompagnées d'une purée de panais </p><span class="artip">40€</span>
-
-                    </div>
-                </div>
-
-                <div class="arti block-2">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Magret de canard
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Et parmentier de pommes de terre </p><span class="artip">35€</span>
-
-                    </div>
-                </div>
-                <div class="arti block-3">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Pigeonneau d’Ille-et-Vilaine
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Sur son lit de gnocchis aux légumes </p><span class="artip">44€</span>
-
-                    </div>
-                </div>
-            </section>
-            <br>
-            <section class="dessert tit">
-                <h2>Desserts</h2>
-                <div class="arti block-1">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Pétales de violettes glacés
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Et purée de noisettes </p><span class="artip">18€</span>
-
-                    </div>
-                </div>
-                <div class="arti block-2">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Fondant au chocolat
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Revisité</p><span class="artip">22€</span>
-
-                    </div>
-                </div>
-                <div class="arti block-3">
-                    <div class="vali"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="tit-blo">
-                        <h3 class="titel">
-                            Millefeuille croustillant
-                        </h3>
-                    </div>
-                    <div class="artit">
-                        <p class="artist">Myrtilles et pâte d’amande </p><span class="artip">23€</span>
-
-                    </div>
-                </div>
-            </section>
-            <section class="btcoman">
-                <div>
+                    <article class="block-1">
+                        <div class="content">
+                            <h3>Pétales de violettes glacés</h3>
+                            <p>Et purée de noisettes</p>
+                        </div>
+                        <div class="price">18€</div>
+                        <div class="validation"><i class="fa-solid fa-circle-check"></i></div>
+                    </article>
+                    <article class="block-2">
+                        <div class="content">
+                            <h3>Fondant au chocolat</h3>
+                            <p>Revisité</p>
+                        </div>
+                        <div class="price">22€</div>
+                        <div class="validation"><i class="fa-solid fa-circle-check"></i></div>
+                    </article>
+                    <article class="block-3">
+                        <div class="content">
+                            <h3>Millefeuille croustillant</h3>
+                            <p>Myrtilles et pâte d’amande</p>
+                        </div>
+                        <div class="price">23€</div>
+                        <div class="validation"><i class="fa-solid fa-circle-check"></i></div>
+                    </article>
                     <button class="btn-comm" type="button">
                         Commande
                     </button>
-                </div>
-            </section>
+                </section> 
+
+            </div>
         </div>
-    </div>
-    <footer class="footer">
-        <div class="block-log"><img class="logo-foo" src="images/logo/ohmyfood@2x.svg" alt="logo2"></div>
-        <ul class="foot">
-            <li><a href="#"><i class="fa-solid fa-utensils icon-lef"></i>Proposer un resteaurant </a></li>
-            <li><a href="#"><i class="fa-sharp fa-solid fa-handshake-angle icon-lef"></i>Devenir partenaire</a></li>
-            <li><a href="#">Mention légales</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#"></a></li>
-        </ul>
-    </footer>
+        <footer class="footer">
+            <div class="block-log"><img class="logo-foo" src="src/assets/img/logo/ohmyfood@2x.svg" alt="logo2"></div>
+            <ul class="foot">
+                <li><a href="#"><i class="fa-solid fa-utensils icon-lef"></i>Proposer un resteaurant </a></li>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-handshake-angle icon-lef"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mention légales</a></li>
+                <li> <a href="mailto:djennad.ar@gmail.com">Contact</a></li>
+            </ul>
+        </footer>
+    </main>
+
+
+  
 </body>
-
-
 
 </html>

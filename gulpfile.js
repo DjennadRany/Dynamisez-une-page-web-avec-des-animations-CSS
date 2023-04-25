@@ -5,18 +5,18 @@ var rename = require("gulp-rename");
 const concat = require('gulp-concat');
 
 function buildStyles() {
-  return gulp.src(['./sass/**/*.scss'])
+  return gulp.src(['./src/assets/scss/**.scss'])
     .pipe(sass())
     .pipe(concat('all.scss'))
-    .pipe(rename("style.css"))
-  .pipe(gulp.dest("css/"));
+    .pipe(rename("./style.css"))
+    .pipe(gulp.dest("src/dist/css"));
 
- 
 };
+
 
 exports.default = buildStyles;
 
 exports.watch = function () {
-    gulp.watch(['./sass/**/*.scss']);
+    gulp.watch(['./src/assets/scss/**/*.scss']);
  
   };

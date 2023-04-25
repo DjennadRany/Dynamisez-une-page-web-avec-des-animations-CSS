@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+footer.footer {
+    /* templat footer */
+    padding: 1em;
+    background: #353535;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    .block-log img.logo-foo {
+        fill: #ffffff;
+        filter: invert(1);
+        -webkit-filter: invert(1);
+        width: 137px;
+    }
+    .block-log {
+        margin: 1em 0em;
+    }
+    ul.foot {
+        margin:0;
+        list-style-type: none;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+
+        li {
+            margin-right: 1em;
+
+            .icon-lef {
+                margin-right: 10px;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: "Roboto";
+                margin-top: 1em;
+              }
+        }
+    }
+
+    /* templat footer */
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+
+}
+
+
+@media screen and (max-width: 992px) {
+    
+    footer.footer {
+        padding: 1em;
+        background: #353535;
+        color: white;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        .block-log {
+            margin: 1em 0em;
+        }
+        ul.foot {
+            margin:0;
+            list-style-type: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0;
+            justify-content: flex-end;
+            flex-wrap: nowrap;
+            li {
+                margin-right: 0em;
+                margin: 7px 0em;
+            }
+        }
+    }
+  }
