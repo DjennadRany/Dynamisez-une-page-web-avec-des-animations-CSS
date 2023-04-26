@@ -127,6 +127,8 @@
   justify-content: space-around;
   align-content: space-around;
   align-items: center;
+  transition-duration: 0.25s;
+  animation-duration: 0.25s;
 }
 #hub .reserv-men .btn-comm:hover {
   background: linear-gradient(#f498e7, #9f57dd);
@@ -494,6 +496,8 @@ ul.nav i.fa-solid.fa-arrow-left {
   margin-top: 4em;
   margin-bottom: 2em;
   height: 4em;
+  transition-duration: 0.25s;
+  animation-duration: 0.25s;
 }
 .container .sous-containe .btn-comm:hover {
   background: linear-gradient(#f498e7, #9f57dd);
@@ -698,6 +702,8 @@ ul.nav i.fa-solid.fa-arrow-left {
     margin-top: 4em;
     margin-bottom: 2em;
     height: 4em;
+    transition-duration: 0.25s;
+    animation-duration: 0.25s;
   }
   .container .sous-containe .btn-comm:hover {
     background: linear-gradient(#f498e7, #9f57dd);
