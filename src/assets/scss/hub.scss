@@ -58,10 +58,11 @@
 
 /* composant */
 #hub {
+    width: auto;
 
     .localiz {
 
-        /* block localisation */
+
         .loca {
             height: 50px;
             background: #eaeaea;
@@ -312,8 +313,6 @@
                     }
                 }
 
-       
-                
             }
         }
     }
@@ -324,8 +323,6 @@
 
     #hub {
         .fonct {
-
-            /* block fonctionnement */
             .block-conf {
                 flex-direction: row;
                 justify-content: flex-start;
@@ -344,7 +341,7 @@
         .tox {
             /* block restaurant */
             align-items: flex-start;
-         
+
 
             .tibox {
                 width: 80%;
@@ -352,11 +349,11 @@
 
 
             .restorant {
-               
-                flex-direction: row;      
+
+                flex-direction: row;
                 flex-wrap: wrap;
                 align-items: center;
-             
+
 
                 .block-rest {
                     width: 40%;
@@ -371,7 +368,5 @@
 
             /* block tox fonct*/
         }
-
-
     }
 }
