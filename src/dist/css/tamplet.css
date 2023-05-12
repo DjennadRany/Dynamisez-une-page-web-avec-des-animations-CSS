@@ -120,21 +120,6 @@ ul.nav i.fa-solid.fa-arrow-left {
 @media (min-width: 992px) {
   footer.footer {
     /* templat footer */
-    padding: 1em;
-    background: #353535;
-    color: white;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  footer.footer ul.foot {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
   }
   footer.footer ul.foot li {
     margin-right: 1em;

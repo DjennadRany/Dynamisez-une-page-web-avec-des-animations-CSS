@@ -140,23 +140,7 @@ ul.nav {
 
     footer.footer {
         /* templat footer */
-        padding: 1em;
-        background: #353535;
-        color: white;
-        list-style-type: none;
-        display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: center;
-
-
         ul.foot {
-
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-end;
-            flex-wrap: nowrap;
 
             li {
                 margin-right: 1em;
