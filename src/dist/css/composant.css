@@ -1,0 +1,85 @@
+.coeur {
+  /*coeur */
+  display: block;
+  position: relative;
+  float: right;
+}
+.coeur .menu__btn {
+  height: 2rem;
+  width: 2rem;
+  background-color: initial;
+  border: 0 solid transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: #000;
+}
+.coeur .menu__btn:hover:before {
+  opacity: 1;
+}
+.coeur .menu__btn:before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+}
+.coeur .menu__btn:before,
+.coeur .menu__like {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.coeur .menu__like {
+  transition-duration: 0.25s;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+}
+.coeur .menu__btn:hover .menu__like--noBg {
+  opacity: 0;
+}
+
+/*coeur menu*/
+.container {
+  /*coeur menu*/
+  /*btn commande et restaurant*/
+}
+.container .sous-containe .coeur {
+  /*coeur */
+  display: block;
+  margin-left: 1em;
+}
+.container .sous-containe .coeur .menu__like {
+  background-color: #f7f7f7;
+}
+.container .btn-comm {
+  background: linear-gradient(#ed6fda, #9f57dd);
+  border-radius: 28px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 1px 2px 6px #505050;
+  width: 35%;
+  margin: auto;
+  color: white;
+  position: relative;
+  display: block;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  height: 4em;
+  transition-duration: 0.25s;
+  animation-duration: 0.25s;
+}
+.container .btn-comm:hover {
+  background: linear-gradient(#f498e7, #9f57dd);
+  transition-duration: 0.25s;
+  animation-duration: 0.25s;
+  background-color: #fff;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}

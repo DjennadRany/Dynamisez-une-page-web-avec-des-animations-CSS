@@ -7,8 +7,6 @@ const concat = require('gulp-concat');
 function buildStyles() {
   return gulp.src(['./src/assets/scss/**.scss'])
     .pipe(sass())
-    .pipe(concat('all.scss'))
-    .pipe(rename("./style.css"))
     .pipe(gulp.dest("src/dist/css"));
 
 };
