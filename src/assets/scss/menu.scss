@@ -104,7 +104,12 @@
       .block-11 {
         animation-delay: 11s;
       }
-  
+  .ani{
+    animation-name: shownom;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+  }
       article {
         display: flex;
         opacity: 0;

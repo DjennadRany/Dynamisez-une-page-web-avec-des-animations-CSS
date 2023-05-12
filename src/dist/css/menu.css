@@ -77,6 +77,12 @@
 .container .sous-containe .block-11 {
   animation-delay: 11s;
 }
+.container .sous-containe .ani {
+  animation-name: shownom;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
 .container .sous-containe article {
   display: flex;
   opacity: 0;
