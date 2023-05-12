@@ -47,19 +47,19 @@
 }
 
 /*coeur menu*/
-.container {
+.sous-containe {
   /*coeur menu*/
   /*btn commande et restaurant*/
 }
-.container .sous-containe .coeur {
+.sous-containe .titel-heart .coeur {
   /*coeur */
   display: block;
   margin-left: 1em;
 }
-.container .sous-containe .coeur .menu__like {
+.sous-containe .titel-heart .coeur .menu__like {
   background-color: #f7f7f7;
 }
-.container .btn-comm {
+.sous-containe .btn-comm {
   background: linear-gradient(#ed6fda, #9f57dd);
   border-radius: 28px;
   cursor: pointer;
@@ -76,7 +76,7 @@
   transition-duration: 0.25s;
   animation-duration: 0.25s;
 }
-.container .btn-comm:hover {
+.sous-containe .btn-comm:hover {
   background: linear-gradient(#f498e7, #9f57dd);
   transition-duration: 0.25s;
   animation-duration: 0.25s;
