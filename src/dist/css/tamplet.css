@@ -26,9 +26,6 @@ footer.footer .block-log img.logo-foo {
   -webkit-filter: invert(1);
   width: 137px;
 }
-footer.footer .block-log {
-  margin: 1em 0em;
-}
 footer.footer ul.foot {
   margin: 0;
   list-style-type: none;
@@ -120,6 +117,16 @@ ul.nav i.fa-solid.fa-arrow-left {
 @media (min-width: 992px) {
   footer.footer {
     /* templat footer */
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  footer.footer ul.foot {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
   }
   footer.footer ul.foot li {
     margin-right: 1em;
