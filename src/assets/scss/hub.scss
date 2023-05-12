@@ -1,0 +1,377 @@
+.custom-loading-spinner {
+
+    position: absolute;
+    width: 100%;
+
+}
+
+.custom-loading-spinner::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10001;
+    overflow: hidden;
+    background: #0b0b0b;
+    opacity: 0.6;
+    animation: opa 3s linear forwards;
+    -webkit-animation: opa 3s linear forwards;
+}
+
+.custom-loading-spinner::after {
+    box-sizing: border-box;
+    z-index: 10002;
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #9356DC;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: custom-loading 3s linear forwards;
+    -webkit-animation: custom-loading 3s linear forwards;
+}
+
+@keyframes custom-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+        visibility: hidden;
+    }
+}
+
+@keyframes opa {
+    0% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+/* composant */
+#hub {
+
+    .localiz {
+
+        /* block localisation */
+        .loca {
+            height: 50px;
+            background: #eaeaea;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+
+            h6 {
+                font-size: 18px;
+                font-weight: 100;
+            }
+
+            i.fa-solid.fa-location-dot {
+                font-size: larger;
+                margin-right: 1em;
+                /* block localisation */
+            }
+        }
+    }
+
+    .reserv-men {
+        /* block reservation*/
+        margin: 0;
+        display: block;
+        background: #F7F7F7;
+        padding: 2em;
+
+        a {
+            text-decoration: none;
+        }
+
+        h1 {
+            margin: 0em;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: #353535;
+        }
+
+        .btn-comm {
+            background: linear-gradient(#ed6fda, #9f57dd);
+            border-radius: 28px;
+            border: none;
+            box-shadow: 1px 2px 6px #505050;
+            width: 218px;
+            margin: auto;
+            color: white;
+            height: 3em;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+            align-items: center;
+            transition-duration: 0.25s;
+            animation-duration: 0.25s;
+        }
+
+        .btn-comm:hover {
+
+            background: linear-gradient(#f498e7, #9f57dd);
+            transition-duration: 0.25s;
+            animation-duration: 0.25s;
+            background-color: #fff;
+            box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, .5);
+
+            /* block reservation */
+        }
+    }
+
+    .fonct {
+        height: auto;
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80%;
+        margin: auto;
+        padding-top: 1em;
+
+        .block-conf {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 2em;
+
+            .bill {
+                background: #9356dc;
+                color: white;
+                left: -25px;
+                position: relative;
+                padding: 4px;
+                border-radius: 1em;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                display: inline-block;
+            }
+
+            .choz {
+                display: inline-block;
+            }
+
+            .cont-fon {
+                width: 90%;
+                background: #F7F7F7;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+                border-radius: 20px;
+                display: flex;
+                padding: 1em;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                margin: 1%;
+                height: 3em;
+
+                .ico-sol {
+                    margin: 0 1em;
+                    display: inline-block;
+                    color: #7E7E7E;
+
+                }
+
+            }
+
+            .cont-fon:hover>.ico-sol {
+                margin: 0 1em;
+                display: inline-block;
+                color: #9356DC;
+
+                /* block fonctionnement */
+            }
+        }
+
+
+
+
+    }
+
+    /* block restau */
+    .tox {
+        width: 100%;
+        height: auto;
+        background: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding-top: 1em;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        .tibox {
+            margin: auto;
+            width: 90%;
+        }
+
+        .restorant {
+            background: #f6f6f6;
+            padding: 0em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: nowrap;
+            align-items: stretch;
+            padding-top: 0;
+            width: 100%;
+            padding-bottom: 4em;
+
+            .block-rest {
+                width: 90%;
+                border-radius: 12px;
+                -webkit-border-radius: 12px;
+                -moz-border-radius: 12px;
+                -ms-border-radius: 12px;
+                -o-border-radius: 12px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                background: white;
+                margin: 1em auto;
+
+                .img-rest {
+                    width: 100%;
+                    height: 251px;
+                    position: relative;
+                    object-position: center;
+                    object-fit: contain;
+
+                    .nouv {
+                        position: absolute;
+                        background: #99E2D0;
+                        width: 80px;
+                        text-align: center;
+                        margin: auto;
+                        float: right;
+                        right: 20px;
+                        top: 20px;
+                        color: #008766;
+                        padding: 4px;
+                        height: 29px;
+                        border-radius: 2px;
+                        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+
+                        p {
+                            margin: 6px;
+                        }
+                    }
+
+                    img {
+                        width: -webkit-fill-available;
+                        height: -webkit-fill-available;
+                        border-radius: 12px 12px 0 0;
+                        object-fit: cover;
+                        -webkit-border-radius: 12px 12px 0 0;
+                        -moz-border-radius: 12px 12px 0 0;
+                        -ms-border-radius: 12px 12px 0 0;
+                        -o-border-radius: 12px 12px 0 0;
+                    }
+                }
+
+                .unbl-rest {
+                    width: 100%;
+                    display: block;
+                    padding: 1em;
+
+                    h3.tit-blo {
+                        margin: 0;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+
+       
+                
+            }
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    #hub {
+        .fonct {
+
+            /* block fonctionnement */
+            .block-conf {
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-bottom: 2em;
+
+
+                .cont-fon {
+                    width: 30%;
+
+                }
+            }
+        }
+
+
+
+        .tox {
+            /* block restaurant */
+            align-items: flex-start;
+         
+
+            .tibox {
+                width: 80%;
+            }
+
+
+            .restorant {
+               
+                flex-direction: row;      
+                flex-wrap: wrap;
+                align-items: center;
+             
+
+                .block-rest {
+                    width: 40%;
+                    margin: 1em 1em;
+
+
+
+                }
+
+                /* block reservation*/
+            }
+
+            /* block tox fonct*/
+        }
+
+
+    }
+}

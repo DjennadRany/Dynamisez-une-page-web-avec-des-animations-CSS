@@ -1,0 +1,160 @@
+// Mobile first 
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+footer.footer {
+    /* templat footer */
+    padding: 1em;
+    background: #353535;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    .block-log {
+        margin: 1em 0em;
+    }
+
+    .block-log img.logo-foo {
+        fill: #ffffff;
+        filter: invert(1);
+        -webkit-filter: invert(1);
+        width: 137px;
+    }
+
+
+
+    ul.foot {
+        margin: 0;
+        list-style-type: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+
+        li {
+            margin-right: 0em;
+            margin: 7px 0em;
+
+            .icon-lef {
+                margin-right: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: "Roboto";
+                margin-top: 1em;
+            }
+        }
+    }
+
+    /* templat footer */
+}
+
+/* templat nav */
+/* templat hub */
+#hub {
+    ul.nav {
+        /* navbar */
+        list-style-type: none;
+        margin: auto;
+        padding: 1em;
+
+        li {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+
+            /* navbar */
+            img.linav {
+                width: 200px;
+            }
+        }
+    }
+    /* templat nav */
+/* templat hub */
+}
+
+/*tamplet nav*/
+/* templat menu */
+
+ul.nav {
+    /* navbar */
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+
+    li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        /* navbar */
+    }
+
+    img.logo {
+        width: 200px;
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin: 1em auto;
+
+    }
+
+    img.imgf {
+        width: 100%;
+        height: 318px;
+        object-fit: cover;
+        position: relative;
+        object-position: center;
+    }
+
+    i.fa-solid.fa-arrow-left {
+        font-size: xx-large;
+        color: black;
+        margin: auto;
+        position: relative;
+        margin-left: 1em;
+    }
+    /*tamplet nav*/
+/* templat menu */
+}
+
+
+// This applies from 600px onwards
+@media (min-width: 992px) {
+
+    footer.footer {
+        /* templat footer */
+     
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+
+        ul.foot {
+
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: nowrap;
+
+            li {
+                margin-right: 1em;
+            }
+        }
+    }
+}
